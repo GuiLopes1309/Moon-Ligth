@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que o preenchimento/padding seja incluído no cálculo da largura, evitando que o conteúdo ultrapasse a tela*/
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    padding: min(5vh, 4rem); /*Ajustando o padding para ser mais flexível*/
+    background-color: #3e838c;
+    width: 100%; /*Colocando a largura para 100% do espaçe dísponivel*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Aqui começamos o posicionamento do header */
+    position: sticky; /*Posicionamento do Header usando o Stick, sendo um posicionamento fixo, porém distinto do Fixed*/
+    top: 0; /*Espaçamento superior zerado, fazendo com que o Header fique grudado ao top*/
+    left: 0; /*Espaçamento a esuqerda zerado, fazendo com que o Header fique grudado à esquerda*/
+    z-index: 999; /*Eixo de profundidade*/
+
+    /*borda inferior*/
+    box-shadow: 0 0.21rem 0.5rem #ffffff; /*Primeiro valor xombra na Dreita (0) segundo valor sombra Bottom (0.21rem) terceiro valor gradiant da sombra (0.5rem)*/
+}
+
+header i {
+    color: white;
+    font-size: 6em;
+}
+
+header button {
+    width: 13rem;
+    height: 1.5rem;
+    background-color: #8ebdb6;
+    border-radius: 1rem;
+    padding: 1.3rem;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-01 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1900ff;
+    width: 100%;
+    padding: min(20vh, 6rem);
+}
+
+.section-02 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #002857;
+    width: 100%;
+    padding: min(20vh, 6rem);
+}
+
+.div-01 p {
+    font-size: 2em;
+    margin: 1.2em;
+    color: white;
+}
+
+.div-02 img {
+    width: 25rem;
+    margin: 5rem auto;
+    display: block; /* Garantindo que a imagem se comporte como um bloco */
+}
+
+footer {
+    background-color: #3e838c;
+    width: 100%;
+    padding: min(10vh, 4rem);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.div-icons a {
+    text-decoration: none;
+    color: white; 
+    font-size: 8em; 
+}
+
+
+.div-icons a i {
+    background-color: rgba(240, 248, 255, 0.411); 
+    padding: 1rem; 
+    border-radius: 1rem; 
+    text-align: center;
+}
+
+
+
+@media(max-width: 830px) {
+    header i {
+        font-size: 3rem;
+        z-index: 999;
+    }
+
+    header button {
+        width: 10rem;
+        height: 0.8rem;
+    }
+
+    .section-01 {
+        padding: 9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .section-02 {
+        padding: 9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .div-01 p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        text-align: left;
+        padding: 2.3rem;
+        width: 100%;
+        margin: 1em;
+    }
+
+    .div-02 img {
+        width: 18rem;
+        margin: 0 auto;
+    }
+
+    .div-icons a {
+        font-size: 3rem;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+}
