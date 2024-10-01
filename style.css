@@ -70,7 +70,7 @@ header button {
 }
 
 .div-02 img {
-    width: 25rem;
+    width: 20rem;
     margin: 5rem auto;
     display: block; /* Garantindo que a imagem se comporte como um bloco */
 }
@@ -94,7 +94,7 @@ header button {
     position: relative; /*Posicionamento relativo*/
 }
 
-.card { /*Aqui estmaos estilixando nossa caixa onde dentr estão os conteúdos*/
+.card { /*Aqui estmaos estilizando nossa caixa onde dentro estão os conteúdos*/
     width: 200px; /*Largura da caixa*/
     height: 400px; /*Altura da caixa */
     margin: 30px; /*Espaçamento geral*/
@@ -106,7 +106,7 @@ header button {
 .content { /*Caixa de conteúdo*/
     padding: 20px; /*Preenchimento interno do conteúdo */
     text-align: center; /*Alinhando o conteúdo ao centro*/
-    transform: translateY(50px); /*Estabelecendo um raio de 50px de espaço no eixo Y*/
+    transform: translateY(50px); /*Estabelecendo um raio para baixo de 50px de espaço no eixo Y*/
     opacity: 0.2; /*20% de opacidade*/
     transition: 0.5s; /*Aplicando uma transição no evento*/
 }
@@ -159,20 +159,24 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+   
 }
 
 .div-icons a {
     text-decoration: none;
     color: white; 
     font-size: 8em; 
+    flex-wrap: wrap;
+    position: relative;
 }
 
 
 .div-icons a i {
     background-color: rgba(240, 248, 255, 0.411); 
-    padding: 1rem; 
-    border-radius: 1rem; 
+    padding: 20px; 
+    border-radius: 14px; 
     text-align: center;
+    margin: 10px;
 }
 
 
@@ -220,10 +224,5 @@ footer {
         margin: 0 auto;
     }
 
-    .div-icons a {
-        font-size: 3rem;
-        display: flex;
-        flex-direction: column;
-        margin: 1rem;
-    }
+    
 }
